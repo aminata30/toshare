@@ -1,4 +1,5 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit,  Input} from '@angular/core';
+import {Asnap} from '../models/asnap.model';
 
 @Component({
   selector: 'app-asnap',
@@ -6,6 +7,7 @@ import { Component, OnInit} from '@angular/core';
   styleUrl: './asnap.component.scss'
 })
 export class AsnapComponent implements OnInit{
+ @Input() aSnap!:  Asnap;
   title!: string;
   description!: string;
   createdDate!: Date;
@@ -14,19 +16,14 @@ export class AsnapComponent implements OnInit{
   buttonText!: string;
 
   ngOnInit() {
-    this.title = "Athéna";
-    this.description = "Athena is a Grec goddess and the daughter of Zeus"
-    this.createdDate = new Date()
-    this.snaps = 6;
-    this.imageUrl = "/assets/Athena-Wisdom.jpg";
     this.buttonText = "Oh Snap !";
   }
   onSnap(){
     if (this.buttonText === 'Oh Snap !') { 
-      this.snaps++;
+      this.aSnap.snaps++;
       this.buttonText= 'Oops, unSnap !'
     } else {
-      this.snaps--;
+      this.aSnap.snaps--;
       this.buttonText= 'Oh Snap !'
     }
     
