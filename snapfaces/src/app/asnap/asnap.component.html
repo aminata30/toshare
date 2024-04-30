@@ -1,10 +1,10 @@
 <div class="asnap-card">
-    <h2>{{title}}</h2>
-    <p>Mise en ligne le:{{createdDate}}</p>
-    <img [src]="imageUrl" [alt]="title">
-    <p>{{description}}</p>
+    <h2>{{aSnap.title}}</h2>
+    <p>Mise en ligne le:{{aSnap.createdDate}}</p>
+    <img [src]="aSnap.imageUrl" [alt]="aSnap.title">
+    <p>{{aSnap.description}}</p>
     <p> 
         <button (click)="onSnap()">{{buttonText}}</button>
-        💖 {{snaps}}
+        💖 {{aSnap.snaps}}
     </p>
 </div>
