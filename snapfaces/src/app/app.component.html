@@ -1,3 +1,1 @@
-<app-asnap [aSnap]="mySnap"></app-asnap>
-<app-asnap [aSnap]="myOtherSnap"></app-asnap>
-<app-asnap [aSnap]="myLastSnap"></app-asnap>
+<app-asnap *ngFor="let aSnapElementofArray of aSnapsArray" [aSnap]="aSnapElementofArray"></app-asnap>
