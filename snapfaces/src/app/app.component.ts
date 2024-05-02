@@ -7,31 +7,60 @@ import { Asnap } from './models/asnap.model';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit{
-  mySnap!: Asnap;
-  myOtherSnap!: Asnap;
-  myLastSnap!: Asnap;
+  aSnapsArray!: Asnap[];
+
+
   ngOnInit(){
-    this.mySnap = new Asnap(
-      "Athéna",
-      "Athena is a Greek goddess and the daughter of Zeus",
-      "/assets/Athena-Wisdom.jpg",
-      new Date(),
-      0
-    );
-    this.myOtherSnap = new Asnap(
-      "Aphrodite",
-      "Vénus is a Greek goddess and the daughter of Ouranos",
-      "/assets/goddess-aphrodite.jpg",
-      new Date(),
-      0
-    );
-    this.myLastSnap = new Asnap(
-      "Artémis",
-      "Artémis is a Greek goddess and the daughter of Zeus",
-      "/assets/artemis-goddess.jpg",
-      new Date(),
-      0
-    );
+    this.aSnapsArray=[
+      {
+        title: "Athéna",
+        location: 'Agen',
+        description: "Athena is a Greek goddess and the daughter of Zeus",
+        imageUrl: "/assets/Athena-Wisdom.jpg",
+        createdDate: new Date(),
+        snaps: 15,
+      },
+      {
+        title: "Aphrodite",
+        location: 'Angers',
+        description: "Aphrodite is a Greek goddess and the daughter of Ouranos",
+        imageUrl: "/assets/goddess-aphrodite.jpg",
+        createdDate: new Date(),
+        snaps: 12,
+      },
+      {
+        title: "Artémis",
+        description: "Artémis is a Greek goddess and the daughter of Zeus",
+        imageUrl: "/assets/artemis-goddess.jpg",
+        createdDate: new Date(),
+        snaps: 10
+      },
+      {
+        title: "Athéna",
+        location: 'Agen',
+        description: "Athena is a Greek goddess and the daughter of Zeus",
+        imageUrl: "/assets/Athena-Wisdom.jpg",
+        createdDate: new Date(),
+        snaps: 15,
+      },
+      {
+        title: "Aphrodite",
+        location: 'Angers',
+        description: "Aphrodite is a Greek goddess and the daughter of Ouranos",
+        imageUrl: "/assets/goddess-aphrodite.jpg",
+        createdDate: new Date(),
+        snaps: 12,
+      },
+      {
+        title: "Artémis",
+        description: "Artémis is a Greek goddess and the daughter of Zeus",
+        imageUrl: "/assets/artemis-goddess.jpg",
+        createdDate: new Date(),
+        snaps: 10
+      }
+    ]
+
+      
   }
 }
 
