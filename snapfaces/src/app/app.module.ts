@@ -6,11 +6,15 @@ import * as fr from '@angular/common/locales/fr';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AsnapComponent } from './asnap/asnap.component';
+import { ASnapListComponent } from './a-snap-list/a-snap-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AsnapComponent
+    AsnapComponent,
+    ASnapListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
