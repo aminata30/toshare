@@ -29,5 +29,4 @@ export class AsnapComponent implements OnInit{
     }
     
   }
-
 }
