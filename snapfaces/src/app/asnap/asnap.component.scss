@@ -1,7 +1,11 @@
 
+.aCards{
+  display: flex;
+  border: 2px solid #6D410C;
+}
 .asnap-card {
   box-sizing: border-box;
-  width: 50%;
+  width: 40%;
   margin: 20px auto;
   padding: 10px 30px;
   box-shadow:  #ECE2D0 4px 4px 20px;
@@ -35,5 +39,16 @@
     }
     button:hover{
       background-color: #ECE2D0;
+    }
+  }
+  .snapped{
+    background-color: #B0977E;
+    color:#6D410C;
+    button{
+      box-shadow: #6D410C 1px 1px 7px;
+      color: #6D410C;
+      &:active{
+        box-shadow: #6D410C 0 0 5px;
+      }
     }
   }
