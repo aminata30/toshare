@@ -35,32 +35,7 @@ export class AppComponent implements OnInit{
         createdDate: new Date(),
         snaps: 149,
       },
-      {
-        title: "Athéna",
-        location: 'Agen',
-        description: "Athena is a Greek goddess and the daughter of Zeus",
-        imageUrl: "/assets/Athena-Wisdom.jpg",
-        createdDate: new Date(),
-        snaps: 15,
-      },
-      {
-        title: "Aphrodite",
-        location: 'Angers',
-        description: "Aphrodite is a Greek goddess and the daughter of Ouranos",
-        imageUrl: "/assets/goddess-aphrodite.jpg",
-        createdDate: new Date(),
-        snaps: 12,
-      },
-      {
-        title: "Artémis",
-        description: "Artémis is a Greek goddess and the daughter of Zeus",
-        imageUrl: "/assets/artemis-goddess.jpg",
-        createdDate: new Date(),
-        snaps: 10
-      }
-    ]
-
-      
+    ]  
   }
 }
 
