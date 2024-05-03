@@ -14,6 +14,7 @@ export class AsnapComponent implements OnInit{
   snaps!: number;
   imageUrl!: string;
   buttonText!: string;
+  postNum!: number;
 
   ngOnInit() {
     this.buttonText = "Oh Snap !";
@@ -28,4 +29,5 @@ export class AsnapComponent implements OnInit{
     }
     
   }
+
 }
