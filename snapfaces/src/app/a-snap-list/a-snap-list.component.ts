@@ -14,6 +14,7 @@ export class ASnapListComponent implements OnInit {
   constructor(private aSnapService: ASnapService){}
 
   ngOnInit(): void{
-    this.aSnapsArray=  this.aSnapService.aSnapsArray;
+    this.aSnapsArray= this.aSnapService.getAllASnap();
   }
+
 }
