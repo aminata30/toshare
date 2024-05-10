@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { AsnapComponent } from './asnap/asnap.component';
 import { ASnapListComponent } from './a-snap-list/a-snap-list.component';
 import { HeaderComponent } from './header/header.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SingleASnapComponent } from './single-a-snap/single-a-snap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AsnapComponent,
     ASnapListComponent,
-    HeaderComponent
+    HeaderComponent,
+    LandingPageComponent,
+    SingleASnapComponent
   ],
   imports: [
     BrowserModule,

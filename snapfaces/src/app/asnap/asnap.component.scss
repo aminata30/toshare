@@ -1,45 +1,21 @@
-
-.aCards{
-  display: flex;
-  border: 2px solid #6D410C;
-}
 .asnap-card {
   box-sizing: border-box;
-  width: 40%;
+  width: 50%;
   margin: 20px auto;
   padding: 10px 30px;
   box-shadow:  #ECE2D0 4px 4px 20px;
   border: 2px solid #6D410C;
   border-radius: 10px;
-    img {
-      width: 100%;
-    }
-    h2{
-      margin-bottom: 0;
-    }
-    p{
-      font-weight: 300;
-      font-size: 16px;
-    }
-    button{
-      background-color: transparent;
-      box-sizing: border-box;
-      padding: 3px 3px;
-      border-radius: 5px;
-      border-color: #6D2E0C;
-      box-shadow: none;
-      margin-right: 10px;
-      outline: none;
-      font-size: 14px;
-      font-weight: 500;
-      &:active{
-        transform: translate(1px,1px);
-        box-shadow: #6D410C 0 0 5px;
-      }
-    }
-    button:hover{
-      background-color: #ECE2D0;
-    }
+  img {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
   }
   .snapped{
     background-color: #B0977E;
@@ -51,4 +27,4 @@
         box-shadow: #6D410C 0 0 5px;
       }
     }
-  }
+}

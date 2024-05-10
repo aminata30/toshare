@@ -14,7 +14,7 @@ export class ASnapService {
       description: "Athena is a Greek goddess and the daughter of Zeus",
       imageUrl: "/assets/Athena-Wisdom.jpg",
       createdDate: new Date(),
-      snaps: 150,
+      snaps: 160,
     },
     {
       id:2,
@@ -23,7 +23,7 @@ export class ASnapService {
       description: "Aphrodite is a Greek goddess and the daughter of Ouranos",
       imageUrl: "/assets/goddess-aphrodite.jpg",
       createdDate: new Date(),
-      snaps: 95,
+      snaps: 92,
     },
     {
       id:3,
@@ -31,7 +31,7 @@ export class ASnapService {
       description: "Artémis is a Greek goddess and the daughter of Zeus",
       imageUrl: "/assets/artemis-goddess.jpg",
       createdDate: new Date(),
-      snaps: 149,
+      snaps: 150,
     },
   ];
   
@@ -40,15 +40,15 @@ export class ASnapService {
   }
 
   getASnapById(aSnapId: number): Asnap {
-    const ASnap = this.aSnapsArray.find(ASnap => aSnapId === aSnapId);
-    if(!ASnap){
+    const aSnap = this.aSnapsArray.find(aSnap => aSnap.id === aSnapId);
+    if(!aSnap){
       throw new Error("Asnap not found");
     } else {
-      return ASnap;
+      return aSnap;
     }
   }
 
-  snapASnapById(aSnapId: number, snapType: string): void{
+  snapASnapById(aSnapId: number, snapType: 'snap' | 'unsnap'): void{
     const ASnap = this.getASnapById(aSnapId);
     snapType === 'snap' ? ASnap.snaps++ : ASnap.snaps--;
   }
